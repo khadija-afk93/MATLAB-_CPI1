@@ -1,0 +1,15 @@
+clear;
+clc;
+t=0:0.01:10;
+s1=sin(t);
+s2=cos(t);
+s3=sin(t)+cos(t);
+plot(t,s1,'b','LineWidth',2);
+hold on;
+plot(t,s2,'r','LineWidth',2);
+plot(t,s3,'g','LineWidth',2);
+title('signala visualization');
+xlabel('time(t)');
+ylabel('amplitude');
+legend('sin(t)','cos(t)','sin(t)+cos(t)');
+grid on;
